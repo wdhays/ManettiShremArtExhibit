@@ -1,0 +1,430 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: #E8AB9E;
+    color: #FFFFFF;
+    padding: 25px 0px 25px 25px;
+}
+
+.header .title {
+    flex: 1 1 70%;
+}
+
+.header .title h1 {
+    font-weight: 700;
+    font-size: 30pt;
+    padding-bottom: 5px;
+}
+
+.header .title h2 {
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+.header .nav {
+    font-weight: 400;
+    font-size: 9pt;
+    flex: 1 1 30%;
+}
+
+.header .nav ol {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.header .nav li {
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.header .nav li.verticalbar {
+    display: none;
+}
+
+.header .nav li.selected {
+    font-weight: 700;
+}
+
+.main {
+    background-color: #FFFFFF;
+    color: #6c2e2f;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 15px 20px 25px;
+}
+
+.main .description {
+    flex-basis: 30%;
+    padding-top: 10px;
+}
+
+.main .description h1 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.main .description h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.main .description .intro .verticalbar {
+    display: none;
+}
+
+.main .description hr {
+    width: 15px;
+    height: .05%;
+    background-color: #6c2e2f;
+    margin-left: 0px;
+}
+
+.main .description .intro hr {
+    display: block;
+}
+
+.main .description p {
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+
+.main .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 70%;
+    padding-left: 25px;
+}
+
+.main .gallery .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    padding: 10px;
+}
+
+.main .gallery .item h1 {
+    font-weight: 700;
+    font-size: 13pt;
+    padding: 10px 0px 0px 0px;
+}
+
+.main .gallery .item h2 {
+    padding: 5px 0px 0px 0px;
+    font-size: 9pt;
+    font-style: italic;
+}
+
+.main .gallery .item img {
+    width: 100%;
+}
+
+.selective_gallery {
+    display: none;
+}
+
+.selective_gallery .item img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E8AB9E;
+    color: #FFFFFF;
+    padding: 25px 30px 25px 30px;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.footer .address {
+    padding-right: 100px;
+}
+
+.footer .hours {
+}
+
+/*Fullscreen/desktop screen sizes!*/
+@media (min-width: 1200px) {
+    
+    .header {
+        padding:40px;
+    }
+    
+    .header .nav {
+        font-size: 12pt;
+    }
+    
+    .header .nav li {
+        padding-top: 20px
+    }
+    
+    .header .title h1 {
+        font-size: 40pt;
+        padding-bottom: 15px;
+    }
+    
+    .header .title h2 {
+        font-size: 20pt;
+    }
+    
+    .main {
+        padding-left: 40px;
+    }
+    
+    .main .gallery .item {
+        order: 1;
+        display: none;
+    }
+    
+    .main .description {
+        padding-top: 40px;
+    }
+    
+    .main .description .intro h1 {
+        font-size: 20pt;
+    }
+    
+    .main .description .intro h2 {
+        font-size: 20pt;
+        padding-bottom: 10px;
+    }
+    
+    .main .description p {
+        font-size: 14pt;
+        line-height: 1.8;
+    }
+    
+    .main .description hr {
+        width: 30px;
+        height: .15%;
+        background-color: #6c2e2f;
+        margin-left: 0px;
+    }
+    
+    .main .gallery .selected {
+        order: 0;
+        flex-basis: 100%;
+        display: flex;
+        padding-top: 0px;
+    }
+    
+    .main .gallery .imgtitle {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .main .gallery .selected h1 {
+        font-size: 20pt;
+        padding-top: 12px;
+        padding-left: 5px;
+    }  
+    
+    .main .gallery .selected h2 {
+        font-size: 20pt;
+        padding-top: 12px;
+        padding-left: 5px;
+    }  
+    
+    .selective_gallery {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .selective_gallery .item {
+        padding: 3px;
+    }
+    
+    .footer {
+        padding: 40px;
+        font-size: 14pt
+    }
+}
+
+/*Tablet/medium screen sizes!*/
+@media (max-width: 683px) {
+    
+    .main {
+        flex-direction: column;
+        padding-bottom: 0px;
+        padding-right: 25px;
+    }
+    
+    .main .gallery {
+        padding-left: 0px;
+    }
+    
+    .main .gallery .item {
+        flex: 1 1 100%;
+    }
+    
+    .main .description .intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main .description .intro h1 {
+        font-size: 20px;
+    }
+    
+    .main .description .intro h2 {
+        font-size: 20px;
+    }
+    
+    .main .description .intro .verticalbar {
+        display: block;
+        padding: 0px 5px 5px 5px;
+    }
+                
+    .main .description hr {
+        display: none;
+    }
+        
+    .main .description p {
+        font-size: 17px;
+        line-height: 1.7;
+        padding-top: 10px;
+        width: 100%;
+    }
+    
+    .main .gallery {
+        padding-bottom: 20px;    
+    }
+    
+    .main .gallery .item {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .main .gallery .imgtitle {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .main .gallery .item h1 {
+        font-size: 15pt;
+    } 
+    
+    .main .gallery .item h2 {
+        font-size: 12pt;
+        padding: 13px 0px 0px 5px;
+    }   
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 25px;
+    }
+
+    .header .nav {
+        font-size: 16px;
+        order: 0;
+        padding: 0px;
+    }
+    
+    .header .nav ol {
+    }
+    
+    .header .nav li {
+        padding: 25px 10px 15px 10px;
+    }
+    
+    .header .nav li.verticalbar {
+        display: block;
+        padding: 25px 10px 15px 10px;
+    }
+
+    .header .title {
+        order: 1;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .title h1 {
+        flex: auto;
+        font-size: 30pt;
+    }
+
+    .header .title h2 {
+        flex: auto;
+        font-size: 15pt;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    
+    .footer .address {
+        padding-bottom: 30px;
+    }
+}
+
+/*Mobile screen sizes!*/
+@media screen and (max-width: 445px) {
+    
+    .header .nav {
+        font-size: 10pt;
+    }
+    
+    .header .title h1 {
+        font-size: 20pt;
+    }
+    
+    .header .title h2 {
+        font-size: 10pt;
+    }
+    
+    .main {
+        padding-top: 10px;
+    }
+    
+    .main .description .intro h1 {
+        font-size: 10pt;
+    }
+    
+    .main .description .intro h2 {
+        font-size: 10pt;
+    }
+    
+    .main .description p {
+        font-size: 10pt;
+    }
+    
+    .main .gallery {
+        padding-bottom: 10px;
+    }
+    
+    .main .gallery .item .imgtitle h1 {
+        font-size: 10pt;
+    }
+    
+    .main .gallery .item .imgtitle h2 {
+        padding-top: 10px;
+        font-size: 10pt;
+    }
+    
+    .footer {
+        font-size: 10pt;
+    }
+}

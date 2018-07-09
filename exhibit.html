@@ -1,0 +1,132 @@
+<!doctype HTML>
+
+<html lang='en'>
+    
+    <head>
+        <TITLE>Wayne Thiebaud Exhibit</TITLE>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="exhibit.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+        <script src="exhibit.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="title">
+                <h1>WAYNE THIEBAUD</h1>
+                <h2>Exhibition at Manetti Shrem Museum</h2>
+            </div>
+
+            <div class="nav">
+                <ol>
+                    <li class="selected" onclick="location.href='exhibit.html';"  style="cursor:pointer;">HOME</li>
+                    <li class="verticalbar">|</li>
+                    <li onclick="location.href='exhibit.html';"  style="cursor:pointer;">ABOUT</li>
+                    <li class="verticalbar">|</li>
+                    <li onclick="location.href='exhibit.html';"  style="cursor:pointer;">CONTACT</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="description">
+                <div class="intro">
+                    <h1>Open until May 13</h1>
+                    <div class="verticalbar">|</div>
+                    <h2>free to the public</h2>
+                </div>
+                <hr>
+                <p>
+                At an extraordinary historical moment, Wayne Thiebaud proposed a radical new take on painting, and he did so with a slice of pie. This exhibition invites viewers to trace Thiebaud’s emergence as a mature artist with a singular style. The first exhibition to explore this formative period, Wayne Thiebaud | 1958–1968 brings together more than 60 early paintings gathered from private collections and museums throughout the United States.
+                </p>
+            </div>
+            <div class="gallery">
+                <div class="item selected" id="wind">
+                    <img src="./exhibitAssets/Toys.jpg" alt="Painting of wind toys."/>
+                    <div class="imgtitle">
+                        <h1>Wind Toys</h1>
+                        <h2>(1962. oil on canvas)</h2>
+                    </div>
+                </div>
+                <div class="item" id="pancake">
+                    <img src="./exhibitAssets/Pancake.jpg" alt="Painting of a plat of pancakes."/>
+                    <div class="imgtitle">
+                        <h1>Pancake Breakfast</h1>
+                        <h2>(2008. oil on canvas)</h2>
+                    </div>
+                </div>
+                <div class="item" id="cake">
+                    <img src="./exhibitAssets/Cake.jpg" alt="Painting of some cake slices."/>
+                    <div class="imgtitle">
+                        <h1>Around the Cake</h1>
+                        <h2>(1962. oil on canvas)</h2>
+                    </div>
+                </div>
+                <div class="item" id="machines">
+                    <img src="./exhibitAssets/Gumball.jpg" alt="Painting of some gumball machines."/>
+                    <div class="imgtitle">
+                        <h1>Three Machines</h1>
+                        <h2>(1963. oil on canvas)</h2>
+                    </div>
+                </div>
+                <div class="item" id="boston">
+                    <img src="./exhibitAssets/Boston.jpg" alt="Painting of some Boston Cream Pies."/>
+                    <div class="imgtitle">
+                        <h1>Boston Cremes</h1>
+                        <h2>(1962. oil on canvas)</h2>
+                    </div>
+                </div>
+                <div class="item" id="bananas">
+                    <img src="./exhibitAssets/Banana.jpg" alt="Painting of some bananas."/>
+                    <div class="imgtitle">
+                        <h1>Bananas</h1>
+                        <h2>(1963. oil on canvas)</h2>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="selective_gallery">
+            <div class="item" onclick="select_image('wind')">
+                <img src="./exhibitAssets/Toys.jpg" alt="Painting of wind toys."/>
+            </div>
+            <div class="item" onclick="select_image('pancake')">
+                <img src="./exhibitAssets/Pancake.jpg" alt="Painting of a plat of pancakes."/>
+            </div>
+            <div class="item" onclick="select_image('cake')">
+                <img src="./exhibitAssets/Cake.jpg" alt="Painting of some cake slices."/>
+            </div>
+            <div class="item selected" onclick="select_image('machines')">
+                <img src="./exhibitAssets/Gumball.jpg" alt="Painting of some gumball machines."/>
+            </div>
+            <div class="item" onclick="select_image('boston')">
+                <img src="./exhibitAssets/Boston.jpg" alt="Painting of some Boston Cream Pies."/>
+            </div>
+            <div class="item" onclick="select_image('bananas')">
+                <img src="./exhibitAssets/Banana.jpg" alt="Painting of some bananas."/>
+            </div>                
+        </div>
+        
+        <div class="footer">
+            <div class="address">
+                <p>
+                Manetti Shrem Museum<br/><br/>
+                254 Old Davis Rd<br/>
+                Davis, CA 95616<br/>
+                (530) 752-8500
+                </p>
+            </div>
+            <div class="hours">
+                <p>
+                Hours<br/><br/>
+                Closed Monday<br/>
+                Open Tuesday-Friday 12 am - 6 pm<br/>
+                Open Saturday-Sunday 11 am - 5 pm
+                </p>
+            </div>
+        </div>
+    </body>
+    
+</html>
